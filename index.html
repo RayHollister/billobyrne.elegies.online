@@ -100,10 +100,10 @@
 <body class="tachyons f4">
       <div class="container">
             <h1 class="f2 tc lh-title">In Loving Memory of Bill O'Byrne</h1>
-            <a href="photos/Betty-Collins-025.webp" data-lightbox="gallery"
+            <a href="photos/Bill-Obyrne-lg.webp" data-lightbox="gallery"
                   data-alt="Betty Collins and Bill O'Byrne sitting on the couch holding hands"
                   data-title="Betty Collins and Bill O'Byrne sitting on the couch holding hands">
-                  <img src="photos/Betty-Collins.webp"
+                  <img src="photos/Bill-Obyrne.webp"
                         alt="Betty Collins and Bill O'Byrne sitting on the couch holding hands" class="db center mb4"
                         style="max-width: 100%; height: auto;">
             </a>
@@ -119,8 +119,8 @@
                   a civilian engineer with the U.S. Air Force, where he contributed to defense and aerospace systems
                   critical to national security and space exploration. He retired with the Air Force Outstanding
                   Civilian Career Service Award.</p>
-                        <!-- Gallery setup -->
-            <div id="additional-images-slider" class="splide" aria-label="Photo Gallery">
+
+            <div id="image-slider" class="splide" aria-label="Photo Gallery">
                   <div class="splide__track">
                         <ul class="splide__list">
                               <li class="splide__slide"><a href="photos/Bill-OByrne-01.webp"
@@ -288,11 +288,11 @@
                               <li class="splide__slide"><a href="photos/Bill-OByrne-55.webp"
                                           data-lightbox="family-gallery"><img src="photos/Bill-OByrne-55.webp"
                                                 alt=""></a></li>
-
                               <!-- Add more slides as needed up to photo 101 -->
                         </ul>
                   </div>
             </div>
+
             <p>A man of deep faith and conviction, Bill taught Sunday School for over 70 years, served as a Scoutmaster,
                   and held many roles within Christian churches and community organizations. He believed in hard work,
                   truthfulness, and loving others with purpose and humility.</p>
@@ -448,30 +448,6 @@
                                     arrows: false,
                               },
                         },
-                  }).mount(window.splide.Extensions);
-
-                  // Initialize the second Splide slider
-                  const secondSplide = new Splide('#additional-images-slider', {
-                        lazyLoad: 'nearby',
-                        type: 'loop',
-                        drag: 'free',
-                        focus: 'center',
-                        perPage: 2, // Adjust as needed
-                        gap: '1rem',
-                        autoScroll: {
-                              speed: 1, // Adjust speed as needed
-                        },
-                        breakpoints: {
-                              960: {
-                                    gap: '.5rem',
-                                    perPage: 1,
-                              },
-                              480: {
-                                    perPage: 1,
-                                    arrows: false,
-                              },
-                        },
-                        // Include any additional configuration options here
                   }).mount(window.splide.Extensions);
             });
 
