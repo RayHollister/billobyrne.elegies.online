@@ -1,0 +1,25 @@
+<style>
+.bar {
+  border: 0px solid #666;
+  height: 20px;
+  width: 100%;
+  
+  .in {
+    animation: fill 10s linear 1;
+    height: 100%;
+    background-color: purple  ;
+  }
+}
+
+@keyframes fill {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+</style>
+<div class="bar">
+  <div class="in"></div>
+</div>
